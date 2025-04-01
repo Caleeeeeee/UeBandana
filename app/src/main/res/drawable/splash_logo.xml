@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="@color/bright_red"
+        android:pathData="M100,100m-100,0a100,100 0,1 1,200 0a100,100 0,1 1,-200 0" />
+
+    <!-- Bandana shape - simple representation -->
+    <path
+        android:fillColor="@color/gold"
+        android:pathData="M50,80 L150,80 L170,100 L150,120 L50,120 L30,100 Z" />
+
+    <!-- UE text -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M70,100 L70,85 L90,85 L90,92 L78,92 L78,95 L88,95 L88,102 L78,102 L78,105 L90,105 L90,112 L70,112 Z" />
+    
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M100,85 L120,85 L120,92 L108,92 L108,112 L100,112 Z" />
+
+</vector>

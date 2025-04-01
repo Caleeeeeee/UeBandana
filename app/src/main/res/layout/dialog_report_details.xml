@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/report_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_red"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sanfranscisco_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/report_detail_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/report_detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/report_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report description goes here..."
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Admin Response Section (Visible for Users when there's a response) -->
+    <LinearLayout
+        android:id="@+id/admin_response_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Response"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/admin_response_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin response goes here..."
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Admin Reply Section (Only visible for admins) -->
+    <LinearLayout
+        android:id="@+id/admin_reply_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/bright_red"
+            app:hintTextColor="@color/dark_red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/admin_reply_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your response here"
+                android:minLines="3"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/status_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/status_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioButton
+                android:id="@+id/status_reviewed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviewed"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioButton
+                android:id="@+id/status_resolved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resolved"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:layout_marginEnd="12dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/dark_red"/>
+
+        <Button
+            android:id="@+id/respond_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respond"
+            android:backgroundTint="@color/bright_red"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

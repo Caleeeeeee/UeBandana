@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "344071585953",
+    "project_id": "uebandana-bf67f",
+    "storage_bucket": "uebandana-bf67f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344071585953:android:d43c65f3a26dd90b4db0e0",
+        "android_client_info": {
+          "package_name": "com.myapp.uebandana"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzSrOtAN8l9rRdHYNdonsz_rB1q8YvTgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

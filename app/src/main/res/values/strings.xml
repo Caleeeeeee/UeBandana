@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ue Bandana</string>
+    <string name="name">Ue Bandana</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="confirm_password_hint">Confirm your password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_profile">User Profile</string>
+    <string name="reports">Reports</string>
+    <string name="guidance_counsellors">Guidance Counsellors</string>
+    <string name="freedom_wall">Freedom Wall</string>
+    <string name="diary">Diary</string>
+    <string name="mental_health_tips">Mental Health Tips</string>
+    <string name="notifications">Notifications</string>
+    <string name="sign_out">Sign Out</string>
+</resources>
